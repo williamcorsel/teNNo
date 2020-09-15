@@ -1,12 +1,12 @@
 # teNNo
 
-The Size Expansion algorithm enables obstacle detection by tracking size changes of objects between frames. This repository contains the code used to perform the experiments performed in the Bachelor's thesis "INSERT_TITLE" at Leiden University. It contains a controller for the Ryze Tello drone that was used, enabling the streaming of video and drone control using the keyboard.
+The Size Expansion algorithm enables obstacle detection by tracking size changes of objects between frames. This repository contains the code used to perform the experiments performed in the Bachelor's thesis _"YOLO-based Obstacle Avoidance for Drones"_ at Leiden University. It contains a controller for the Ryze Tello drone that was used, enabling the streaming of video and drone control using the keyboard.
 
 Size Expansion uses object detection to find object in images from the drone's camera to avoid them. Multiple detection methods are included. These can be found in the `detectors` directory
 
 * **SIFT:** Uses SIFT feature matching to identify objects and calculate sizes. Described in the [paper](https://www.mdpi.com/1424-8220/17/5/1061) by Al-Kaff et al.
 * **Darknet:** Runs the [YOLOv4](https://github.com/AlexeyAB/darknet) model used in the thesis.
-* **TensorFlow:** Can run models found in the Tensorflow object detection [model zoo](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/detection_model_zoo.md).
+* **TensorFlow:** Can run models found in the Tensorflow object detection [model zoo](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/tf1_detection_zoo.md).
 * **EfficientDet:** Test implementation of [EfficientDet]((https://github.com/zylo117/Yet-Another-EfficientDet-Pytorch)). Currently only detects objects
 
 ## How to install
