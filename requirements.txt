@@ -1,0 +1,6 @@
+opencv-contrib-python>=4.3.0
+av
+Pillow
+pynput
+simple-pid
+easydict
